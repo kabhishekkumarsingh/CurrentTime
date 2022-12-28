@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="img.jpg" alt="">
+        <h1 id="current-time"></h1>
+        <div class="quots">
+            <P>TODAY'S QUOTES</P>
+            <h2>"Lost time is never found again"</h2>
+
+        </div>
+        <div class="by">Created by Abhishek Singh</div>
+    </div>
+    <script>
+        let time = document.getElementById("current-time");
+        setInterval(() => {
+            let d = new Date();
+            time.innerHTML = d.toLocaleTimeString();
+        }, 1000)
+
+    </script>
+</body>
+
+</html>
